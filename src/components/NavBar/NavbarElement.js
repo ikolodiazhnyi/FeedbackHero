@@ -8,8 +8,8 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  width: 100vw;
   border-bottom: 1px solid rgba(32, 39, 49, 0.2);
-  font-weight: 400;
 
   @media screen and (max-width: 960px) {
   }
@@ -20,7 +20,7 @@ export const NavContainer = styled.div`
   justify-content: space-between;
   height: 100px;
   width: 100%;
-  padding: 0 60px;
+  padding: 0 60px 0 200px;
   z-index: 1;
   max-width: 1600px;
 `;
@@ -28,17 +28,21 @@ export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
 `;
+ 
+export const NavDiv = styled.div`
+  display: flex;
+  padding-top: 10px;
+`
 
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
   list-style: none;
   text-align: center;
-  padding-left: 200px;
+  padding-left: calc(100% - 840px);
 `;
 
 export const NavItem = styled.li`
-  height: 90px;
 `;
 
 export const NavLink = styled(Link)`
@@ -46,7 +50,7 @@ export const NavLink = styled(Link)`
   align-items: center;
   color: #202731;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 2rem;
   height: 100%;
   cursor: pointer;
 `;
@@ -60,15 +64,17 @@ export const NavBtnLink = styled(Link)`
   color: #ffffff;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 185px;
   height: 40px;
+  align-items: center;
   white-space: nowrap;
   background: linear-gradient(93.31deg, #006ad8 1.67%, #01acb4 98.59%),
-    rgba(196, 196, 196, 0.05);
+  rgba(196, 196, 196, 0.05);
   border-radius: 5px;
   backdrop-filter: blur(37px);
   font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
+  margin-left: 80px;
+  padding: 14px 40px;
+  min-width: 185px;
 `;
