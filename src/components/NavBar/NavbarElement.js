@@ -8,7 +8,6 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  width: 100vw;
   border-bottom: 1px solid rgba(32, 39, 49, 0.2);
 
   @media screen and (max-width: 960px) {
