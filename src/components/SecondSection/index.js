@@ -1,7 +1,7 @@
 import React from "react";
 import {
-  HugeHeader,
-  PYourBusinnessSuperhero,
+  StyledParagraph,
+  StyledHeader1,
 } from "../FirstSection/FirstSectionElement";
 import {
   Advantage,
@@ -34,13 +34,13 @@ const SecondSection = () => {
       <SectionHeaderWrapper>
         <SectionName>FEATURES</SectionName>
         <DescWrapper style={{ width: "570px" }}>
-          <HugeHeader style={{ fontSize: "46px" }}>
+          <StyledHeader1 style={{ fontSize: "46px" }}>
             Why FeedbackHero?
-          </HugeHeader>
-          <PYourBusinnessSuperhero style={{ fontSize: "1rem" }}>
+          </StyledHeader1>
+          <StyledParagraph style={{ fontSize: "1rem" }}>
             Return customers with NPS service, feedback and FeedbackHero loyalty
             assessment.
-          </PYourBusinnessSuperhero>
+          </StyledParagraph>
         </DescWrapper>
       </SectionHeaderWrapper>
       <AdvantagesWrapper>
@@ -49,16 +49,16 @@ const SecondSection = () => {
             <ImgAdvantage src={imgPdf} alt="icon" />
           </ImgAdvantageWrapper>
           <div style={{ padding: "27px 30px 0 30px" }}>
-            <HugeHeader height="30px" style={{ fontSize: "26px" }}>
+            <StyledHeader1 height="30px" style={{ fontSize: "26px" }}>
               Export results
-            </HugeHeader>
+            </StyledHeader1>
             <ImgRectangle src={Rectangle} alt="icon line" />
-            <PYourBusinnessSuperhero
+            <StyledParagraph
               style={{ fontSize: "1rem", paddingTop: "25px" }}
             >
               With the one click, you can download all your survey results in
               PDF format
-            </PYourBusinnessSuperhero>
+            </StyledParagraph>
           </div>
         </Advantage>
         <Advantage>
@@ -66,14 +66,14 @@ const SecondSection = () => {
             <ImgAdvantage src={Vector} alt="icon" />
           </ImgAdvantageWrapper>
           <div style={{ padding: "27px 30px 0 30px" }}>
-            <HugeHeader style={{ fontSize: "26px" }}>Easy share</HugeHeader>
+            <StyledHeader1 style={{ fontSize: "26px" }}>Easy share</StyledHeader1>
             <ImgRectangle src={Rectangle} alt="icon line" />
-            <PYourBusinnessSuperhero
+            <StyledParagraph
               style={{ fontSize: "1rem", paddingTop: "25px" }}
             >
               Insert the survey directly on your website or send the link to
               your friends
-            </PYourBusinnessSuperhero>
+            </StyledParagraph>
           </div>
         </Advantage>
         <Advantage>
@@ -81,16 +81,16 @@ const SecondSection = () => {
             <ImgAdvantage src={Loyalty} alt="icon" />
           </ImgAdvantageWrapper>
           <div style={{ padding: "27px 30px 0 30px" }}>
-            <HugeHeader style={{ fontSize: "26px" }}>
+            <StyledHeader1 style={{ fontSize: "26px" }}>
               Audience loyalty
-            </HugeHeader>
+            </StyledHeader1>
             <ImgRectangle src={Rectangle} alt="icon line" />
-            <PYourBusinnessSuperhero
+            <StyledParagraph
               style={{ fontSize: "1rem", paddingTop: "25px" }}
             >
               Receive instant messages in the messenger when you mention your
               brand online or new reviews
-            </PYourBusinnessSuperhero>
+            </StyledParagraph>
           </div>
         </Advantage>
         <Advantage>
@@ -98,16 +98,16 @@ const SecondSection = () => {
             <ImgAdvantage src={Flat} alt="icon" />
           </ImgAdvantageWrapper>
           <div style={{ padding: "27px 30px 0 30px" }}>
-            <HugeHeader height='30px' style={{ fontSize: "26px" }}>
+            <StyledHeader1 height='30px' style={{ fontSize: "26px" }}>
               Survey and questionnaire
-            </HugeHeader>
+            </StyledHeader1>
             <ImgRectangle src={Rectangle} alt="icon line" />
-            <PYourBusinnessSuperhero
+            <StyledParagraph
               style={{ fontSize: "1rem", paddingTop: "25px" }}
             >
               To collect responses from colleagues, clients or potential
               audience in just a couple of clicks
-            </PYourBusinnessSuperhero>
+            </StyledParagraph>
           </div>
         </Advantage>
         <Advantage>
@@ -115,16 +115,16 @@ const SecondSection = () => {
             <ImgAdvantage src={CarbonQR} alt="icon" />
           </ImgAdvantageWrapper>
           <div style={{ padding: "27px 30px 0 30px" }}>
-            <HugeHeader style={{ fontSize: "26px" }}>
+            <StyledHeader1 style={{ fontSize: "26px" }}>
               QR code generator
-            </HugeHeader>
+            </StyledHeader1>
             <ImgRectangle src={Rectangle} alt="icon line" />
-            <PYourBusinnessSuperhero
+            <StyledParagraph
               style={{ fontSize: "1rem", paddingTop: "25px" }}
             >
               Find out what your customers want and understand what you are
               doing right or wrong
-            </PYourBusinnessSuperhero>
+            </StyledParagraph>
           </div>
         </Advantage>
         <Advantage>
@@ -132,15 +132,15 @@ const SecondSection = () => {
             <ImgAdvantage src={Carbon} alt="icon" />
           </ImgAdvantageWrapper>
           <div style={{ padding: "27px 30px 0 30px" }}>
-            <HugeHeader height="30px" style={{ fontSize: "26px" }}>
+            <StyledHeader1 height="30px" style={{ fontSize: "26px" }}>
               Analyze surveys with built-in analytics
-            </HugeHeader>
+            </StyledHeader1>
             <ImgRectangle src={Rectangle} alt="icon line" />
-            <PYourBusinnessSuperhero
+            <StyledParagraph
               style={{ fontSize: "1rem", paddingTop: "25px" }}
             >
               Monitor visitor feedback with easy-to-use dashboards and reports
-            </PYourBusinnessSuperhero>
+            </StyledParagraph>
           </div>
         </Advantage>
       </AdvantagesWrapper>

@@ -2,15 +2,21 @@ import styled from "styled-components";
 
 import { Link } from "react-router-dom";
 
-export const SmallHeader = styled.h6`
+export const FlexSection = styled.section`
+  display: flex;
+  justify-content: space-between;
+  padding-top: 105px;
+`;
+
+export const StyledHeader6 = styled.h6`
   text-transform: uppercase;
   color: #03a8b7;
   font-size: 1rem;
   font-weight: 300;
 `;
-export const HugeHeader = styled.h1`
+export const StyledHeader1 = styled.h1`
   font-size: 66px;
-  height: ${({ height }) => height|| 'auto'} ;
+  height: ${({ height }) => height || "auto"};
 `;
 
 export const FirstSection = styled.div`
@@ -19,12 +25,12 @@ export const FirstSection = styled.div`
   padding-top: 105px;
 `;
 
-export const DivYourBusinnessSuperhero = styled.div`
+export const StyledDiv = styled.div`
   padding-left: 202px;
   max-width: 727px;
 `;
 
-export const PYourBusinnessSuperhero = styled.p`
+export const StyledParagraph = styled.p`
   padding-top: 30px;
   font-size: 26px;
   font-weight: 300;
