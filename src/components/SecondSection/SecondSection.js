@@ -5,7 +5,7 @@ export const DescWrapper = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 780px;
-  margin-left: 365px;
+  margin-left: ${({ marginLeft }) => marginLeft || "365px"};
   width: ${({ width }) => width};
 `;
 
@@ -22,7 +22,7 @@ export const SectionName = styled.h6`
 
 export const AdvantagesWrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: ${({ justifeContent }) => justifeContent || "space-between"};
   flex-wrap: wrap;
   padding: 49px 0 0;
 `;
@@ -36,10 +36,15 @@ export const ImgAdvantage = styled.img`
 `;
 
 export const ImgAdvantageWrapper = styled.div`
-  width: 39px;
-  height: 39px;
+  width: ${({ width }) => width || "39px"};
+  height: ${({ height }) => height || "39px"};
   position: relative;
-  margin: 32px 27px 0 0;
+  margin: ${({ marginTop }) => marginTop || "32px"}
+    ${({ marginRight }) => marginRight || "27px"}
+    ${({ marginBottom }) => marginBottom || "0"}
+    ${({ marginLeft }) => marginLeft || "auto"};
+  box-shadow: ${({ boxShadow }) => boxShadow || "none"};
+  border-radius: ${({ borderRadius }) => borderRadius || "0"};
 `;
 
 export const ImgRectangle = styled.img`
@@ -48,12 +53,12 @@ export const ImgRectangle = styled.img`
 
 export const Advantage = styled.div`
   width: 360px;
-  height: 318px;
+  height: ${({ height }) => height || "318px"};
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  align-items: end;
-  margin-bottom: 60px;
+  margin-bottom: ${({ marginBottom }) => marginBottom || "60px"};
+  margin-right: ${({ marginRight }) => marginRight || 0};
 `;

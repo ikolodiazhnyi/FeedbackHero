@@ -14,13 +14,13 @@ import {
   SectionHeaderWrapper,
   SectionName,
 } from "./SecondSection";
-import imgPdf from "../../images/icons/pdf.svg";
-import Rectangle from "../../images/icons/Rectangle.svg";
-import Vector from "../../images/icons/Vector.svg";
-import Loyalty from "../../images/icons/ic_baseline-loyalty.svg";
-import Flat from "../../images/icons/flat-color-icons_survey.svg";
-import CarbonQR from "../../images/icons/carbon_qr-code.svg";
-import Carbon from "../../images/icons/carbon_analytics.svg";
+import imgPdf from "../../images/icons/SecondSection/pdf.svg";
+import Rectangle from "../../images/icons/SecondSection/Rectangle.svg";
+import Vector from "../../images/icons/SecondSection/Vector.svg";
+import Loyalty from "../../images/icons/SecondSection/ic_baseline-loyalty.svg";
+import Flat from "../../images/icons/SecondSection/flat-color-icons_survey.svg";
+import CarbonQR from "../../images/icons/SecondSection/carbon_qr-code.svg";
+import Carbon from "../../images/icons/SecondSection/carbon_analytics.svg";
 
 const SecondSection = () => {
   return (

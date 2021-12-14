@@ -15,6 +15,7 @@ const ThirdSection = () => {
     <FlexSection
       paddingTop="150px"
       paddingRight="200px"
+      paddingBottom="204px"
       flexDirection="column"
       bg="#FCFCFC"
     >

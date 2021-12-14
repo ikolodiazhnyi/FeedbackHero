@@ -13,11 +13,15 @@ export const FlexSection = styled.section`
 `;
 
 export const StyledHeader6 = styled.h6`
-  text-transform: uppercase;
+  text-transform: ${({ textTransform }) => textTransform || "uppercase"};
   color: #03a8b7;
   font-size: 1rem;
   font-weight: 300;
   line-height: ${({ lineHeight }) => lineHeight || "auto"};
+  padding: ${({ paddingTop }) => paddingTop || "0"}
+    ${({ paddingRight }) => paddingRight || "0"}
+    ${({ paddingBottom }) => paddingBottom || "0"}
+    ${({ paddingLeft }) => paddingLeft || "0"};
 `;
 export const StyledHeader1 = styled.h1`
   font-size: ${({ fontSize }) => fontSize || "66px"};
