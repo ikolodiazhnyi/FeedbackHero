@@ -1,18 +1,18 @@
 import Group48095402 from "../../images/Group48095402.svg";
 import {
   FlexSection,
-  ImgCustomerSatisfactionScore,
   LinkBtn,
   StyledDiv,
   StyledHeader1,
   StyledHeader6,
   StyledParagraph,
 } from "./FirstSectionElement";
+import "../styles/styles.css"
 
 const FirstSection = () => {
   return (
     <FlexSection>
-      <StyledDiv>
+      <StyledDiv width="571px">
         <StyledHeader6>Your business superhero </StyledHeader6>
         <StyledHeader1>
           Time is money, reviews is a growing business
@@ -24,7 +24,7 @@ const FirstSection = () => {
         <LinkBtn to="">TRY NOW</LinkBtn>
       </StyledDiv>
       <div>
-        <ImgCustomerSatisfactionScore src={Group48095402} />
+        <img src={Group48095402} alt="" />
       </div>
     </FlexSection>
   );

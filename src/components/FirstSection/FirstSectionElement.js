@@ -5,7 +5,11 @@ import { Link } from "react-router-dom";
 export const FlexSection = styled.section`
   display: flex;
   justify-content: space-between;
-  padding-top: 105px;
+  flex-direction: ${({ flexDirection }) => flexDirection || "row"};
+  background-color: ${({ bg }) => bg || "#fff"};
+  padding: ${({ paddingTop }) => paddingTop || "105px"}
+    ${({ paddingRight }) => paddingRight || "66.4px"}
+    ${({ paddingBottom }) => paddingBottom || "0"} 202px;
 `;
 
 export const StyledHeader6 = styled.h6`
@@ -13,9 +17,10 @@ export const StyledHeader6 = styled.h6`
   color: #03a8b7;
   font-size: 1rem;
   font-weight: 300;
+  line-height: ${({ lineHeight }) => lineHeight || "auto"};
 `;
 export const StyledHeader1 = styled.h1`
-  font-size: 66px;
+  font-size: ${({ fontSize }) => fontSize || "66px"};
   height: ${({ height }) => height || "auto"};
 `;
 
@@ -26,13 +31,15 @@ export const FirstSection = styled.div`
 `;
 
 export const StyledDiv = styled.div`
-  padding-left: 202px;
-  max-width: 727px;
+  max-width: ${({ maxWidth }) => maxWidth || "727px"};
+  width: ${({ width }) => width || "auto"};
+  flex-direction: ${({ flexDirection }) => flexDirection || "auto"};
+  margin-bottom: ${({ marginBottom }) => marginBottom || "0"};
 `;
 
 export const StyledParagraph = styled.p`
-  padding-top: 30px;
-  font-size: 26px;
+  padding-top: ${({ paddingTop }) => paddingTop || "30px"};
+  font-size: ${({ fontSize }) => fontSize || "26px"};
   font-weight: 300;
   color: rgba(24, 30, 37, 0.5);
 `;
@@ -56,10 +63,5 @@ export const LinkBtn = styled(Link)`
   font-size: 14px;
   height: 50px;
   font-weight: 300;
-`;
-
-export const ImgCustomerSatisfactionScore = styled.img`
-  width: 697px;
-  padding-right: 60.4px;
-  height: 447.8px;
+  width: ${({ width }) => width || "auto"};
 `;

@@ -5,8 +5,8 @@ export const DescWrapper = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 780px;
-  width: 570px;
-  margin-left: 363px;
+  margin-left: 365px;
+  width: ${({ width }) => width};
 `;
 
 export const SectionHeaderWrapper = styled.div`
@@ -18,14 +18,13 @@ export const SectionName = styled.h6`
   padding-top: 10px;
   color: #03a8b7;
   font-size: 12px;
-  padding-left: 200px;
 `;
 
 export const AdvantagesWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 49px 200px 0 200px;
+  padding: 49px 0 0;
 `;
 export const ImgAdvantage = styled.img`
   display: block;
