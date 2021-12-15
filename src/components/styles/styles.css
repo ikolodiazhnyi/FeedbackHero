@@ -8,3 +8,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.align-start-flexed {
+  display: flex;
+  align-items: flex-start;
+}
+
+.align-justify-center {
+  align-items: center;
+  justify-content: center;
+}

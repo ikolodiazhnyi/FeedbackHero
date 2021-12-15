@@ -47,12 +47,15 @@ export const ImgAdvantageWrapper = styled.div`
   border-radius: ${({ borderRadius }) => borderRadius || "0"};
 `;
 
-export const ImgRectangle = styled.img`
-  padding-top: 54px;
+export const StyledImg = styled.img`
+  padding: ${({ paddingTop }) => paddingTop || "54px"}
+    ${({ paddingRight }) => paddingRight || "0"}
+    ${({ paddingBottom }) => paddingBottom || "0"}
+    ${({ paddingLeft }) => paddingLeft || "0"};
 `;
 
-export const Advantage = styled.div`
-  width: 360px;
+export const ShadowBorderDiv = styled.div`
+  width: ${({ width }) => width || "360px"};
   height: ${({ height }) => height || "318px"};
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);

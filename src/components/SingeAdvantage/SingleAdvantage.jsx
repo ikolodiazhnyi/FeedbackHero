@@ -5,10 +5,9 @@ import {
   StyledParagraph,
 } from "../FirstSection/FirstSectionElement";
 import {
-  Advantage,
-  AdvantagesWrapper,
   ImgAdvantage,
   ImgAdvantageWrapper,
+  ShadowBorderDiv,
 } from "../SecondSection/SecondSection";
 import { AdvantageDescWrapper } from "../styles/GlobalStyledComponents";
 
@@ -24,7 +23,7 @@ const SingleAdvantage = ({
   styledParagraphProps,
 }) => {
   return (
-    <Advantage {...advantageProp}>
+    <ShadowBorderDiv {...advantageProp}>
       <ImgAdvantageWrapper {...imgAdvantageWrapperProps}>
         <ImgAdvantage src={imgAdvantageProp} alt="icon" />
       </ImgAdvantageWrapper>
@@ -39,7 +38,7 @@ const SingleAdvantage = ({
           {styledParagraphContent}
         </StyledParagraph>
       </AdvantageDescWrapper>
-    </Advantage>
+    </ShadowBorderDiv>
   );
 };
 

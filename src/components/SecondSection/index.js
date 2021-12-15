@@ -5,14 +5,14 @@ import {
   FlexSection,
 } from "../FirstSection/FirstSectionElement";
 import {
-  Advantage,
+  ShadowBorderDiv,
   AdvantagesWrapper,
   DescWrapper,
   ImgAdvantage,
   ImgAdvantageWrapper,
-  ImgRectangle,
   SectionHeaderWrapper,
   SectionName,
+  StyledImg,
 } from "./SecondSection";
 import imgPdf from "../../images/icons/SecondSection/pdf.svg";
 import Rectangle from "../../images/icons/SecondSection/Rectangle.svg";
@@ -41,7 +41,7 @@ const SecondSection = () => {
         </DescWrapper>
       </SectionHeaderWrapper>
       <AdvantagesWrapper>
-        <Advantage>
+        <ShadowBorderDiv>
           <ImgAdvantageWrapper>
             <ImgAdvantage src={imgPdf} alt="icon" />
           </ImgAdvantageWrapper>
@@ -49,14 +49,14 @@ const SecondSection = () => {
             <StyledHeader1 height="30px" fontSize="26px">
               Export results
             </StyledHeader1>
-            <ImgRectangle src={Rectangle} alt="icon line" />
+            <StyledImg src={Rectangle} alt="icon line" />
             <StyledParagraph fontSize="1rem" paddingTop="25px">
               With the one click, you can download all your survey results in
               PDF format
             </StyledParagraph>
           </div>
-        </Advantage>
-        <Advantage>
+        </ShadowBorderDiv>
+        <ShadowBorderDiv>
           <ImgAdvantageWrapper>
             <ImgAdvantage src={Vector} alt="icon" />
           </ImgAdvantageWrapper>
@@ -64,14 +64,14 @@ const SecondSection = () => {
             <StyledHeader1 style={{ fontSize: "26px" }}>
               Easy share
             </StyledHeader1>
-            <ImgRectangle src={Rectangle} alt="icon line" />
+            <StyledImg src={Rectangle} alt="icon line" />
             <StyledParagraph style={{ fontSize: "1rem", paddingTop: "25px" }}>
               Insert the survey directly on your website or send the link to
               your friends
             </StyledParagraph>
           </div>
-        </Advantage>
-        <Advantage>
+        </ShadowBorderDiv>
+        <ShadowBorderDiv>
           <ImgAdvantageWrapper>
             <ImgAdvantage src={Loyalty} alt="icon" />
           </ImgAdvantageWrapper>
@@ -79,14 +79,14 @@ const SecondSection = () => {
             <StyledHeader1 style={{ fontSize: "26px" }}>
               Audience loyalty
             </StyledHeader1>
-            <ImgRectangle src={Rectangle} alt="icon line" />
+            <StyledImg src={Rectangle} alt="icon line" />
             <StyledParagraph style={{ fontSize: "1rem", paddingTop: "25px" }}>
               Receive instant messages in the messenger when you mention your
               brand online or new reviews
             </StyledParagraph>
           </div>
-        </Advantage>
-        <Advantage>
+        </ShadowBorderDiv>
+        <ShadowBorderDiv>
           <ImgAdvantageWrapper>
             <ImgAdvantage src={Flat} alt="icon" />
           </ImgAdvantageWrapper>
@@ -94,14 +94,14 @@ const SecondSection = () => {
             <StyledHeader1 height="30px" style={{ fontSize: "26px" }}>
               Survey and questionnaire
             </StyledHeader1>
-            <ImgRectangle src={Rectangle} alt="icon line" />
+            <StyledImg src={Rectangle} alt="icon line" />
             <StyledParagraph style={{ fontSize: "1rem", paddingTop: "25px" }}>
               To collect responses from colleagues, clients or potential
               audience in just a couple of clicks
             </StyledParagraph>
           </div>
-        </Advantage>
-        <Advantage>
+        </ShadowBorderDiv>
+        <ShadowBorderDiv>
           <ImgAdvantageWrapper>
             <ImgAdvantage src={CarbonQR} alt="icon" />
           </ImgAdvantageWrapper>
@@ -109,14 +109,14 @@ const SecondSection = () => {
             <StyledHeader1 style={{ fontSize: "26px" }}>
               QR code generator
             </StyledHeader1>
-            <ImgRectangle src={Rectangle} alt="icon line" />
+            <StyledImg src={Rectangle} alt="icon line" />
             <StyledParagraph style={{ fontSize: "1rem", paddingTop: "25px" }}>
               Find out what your customers want and understand what you are
               doing right or wrong
             </StyledParagraph>
           </div>
-        </Advantage>
-        <Advantage>
+        </ShadowBorderDiv>
+        <ShadowBorderDiv>
           <ImgAdvantageWrapper>
             <ImgAdvantage src={Carbon} alt="icon" />
           </ImgAdvantageWrapper>
@@ -124,12 +124,12 @@ const SecondSection = () => {
             <StyledHeader1 height="30px" style={{ fontSize: "26px" }}>
               Analyze surveys with built-in analytics
             </StyledHeader1>
-            <ImgRectangle src={Rectangle} alt="icon line" />
+            <StyledImg src={Rectangle} alt="icon line" />
             <StyledParagraph style={{ fontSize: "1rem", paddingTop: "25px" }}>
               Monitor visitor feedback with easy-to-use dashboards and reports
             </StyledParagraph>
           </div>
-        </Advantage>
+        </ShadowBorderDiv>
       </AdvantagesWrapper>
     </FlexSection>
   );

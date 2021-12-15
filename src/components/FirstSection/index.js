@@ -1,4 +1,4 @@
-import Group48095402 from "../../images/Group48095402.svg";
+import Group48095402 from "../../images/FirstSection/Group48095402.svg";
 import {
   FlexSection,
   LinkBtn,

@@ -14,7 +14,7 @@ export const FlexSection = styled.section`
 
 export const StyledHeader6 = styled.h6`
   text-transform: ${({ textTransform }) => textTransform || "uppercase"};
-  color: #03a8b7;
+  color: ${({ color }) => color || "#03a8b7"};
   font-size: 1rem;
   font-weight: 300;
   line-height: ${({ lineHeight }) => lineHeight || "auto"};
@@ -26,6 +26,7 @@ export const StyledHeader6 = styled.h6`
 export const StyledHeader1 = styled.h1`
   font-size: ${({ fontSize }) => fontSize || "66px"};
   height: ${({ height }) => height || "auto"};
+  font-weight: ${({ fontWeight }) => fontWeight || "auto"};
 `;
 
 export const FirstSection = styled.div`
@@ -35,14 +36,22 @@ export const FirstSection = styled.div`
 `;
 
 export const StyledDiv = styled.div`
+  padding: ${({ paddingTop }) => paddingTop || "0"}
+    ${({ paddingRight }) => paddingRight || "0"}
+    ${({ paddingBottom }) => paddingBottom || "0"}
+    ${({ paddingLeft }) => paddingLeft || "0"};
   max-width: ${({ maxWidth }) => maxWidth || "727px"};
   width: ${({ width }) => width || "auto"};
   flex-direction: ${({ flexDirection }) => flexDirection || "auto"};
   margin-bottom: ${({ marginBottom }) => marginBottom || "0"};
+  flex-wrap: ${({ flexWrap }) => flexWrap || "nowrap"};
 `;
 
 export const StyledParagraph = styled.p`
-  padding-top: ${({ paddingTop }) => paddingTop || "30px"};
+  padding: ${({ paddingTop }) => paddingTop || "30px"}
+    ${({ paddingRight }) => paddingRight || "0"}
+    ${({ paddingBottom }) => paddingBottom || "0"}
+    ${({ paddingLeft }) => paddingLeft || "0"};
   font-size: ${({ fontSize }) => fontSize || "26px"};
   font-weight: 300;
   color: rgba(24, 30, 37, 0.5);
