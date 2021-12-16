@@ -48,18 +48,20 @@ const FifthSection = () => {
     >
       <SectionHeaderWrapper>
         <SectionName>OUR CLIENTS</SectionName>
-        <DescWrapper width="780px" marginLeft="298px">
+        <DescWrapper width="780px" marginLeft="346px">
           <StyledHeader1 fontSize="46px">We are trusted</StyledHeader1>
         </DescWrapper>
       </SectionHeaderWrapper>
       <StyledDiv
-        className="align-start-flexed"
+        display="flex"
+        alignItems="flex-start"
         maxWidth="auto"
         paddingTop="62px"
+        bg="#FCFCFC"
       >
         <StyledImg paddingRight="60px" paddingTop="0" src={man} alt="" />
         <StyledImg paddingRight="60px" paddingTop="0" src={vector} alt="" />
-        <StyledDiv width="680px">
+        <StyledDiv width="680px" bg="#FCFCFC">
           <StyledHeader1 fontSize="26px" paddingTop="0" fontWeight="100">
             Some text with rewiev from client Some text with rewiev from client.
             Some text with rewiev from client Some text with rewiev from client
@@ -77,7 +79,7 @@ const FifthSection = () => {
           <StyledParagraph paddingBottom="67px" paddingTop="0" fontSize="16px">
             Hilton Corporation Ltd
           </StyledParagraph>
-          <StyledDiv>
+          <StyledDiv bg="#FCFCFC">
             <StyledImg
               paddingRight="30px"
               paddingTop="0"
@@ -91,20 +93,24 @@ const FifthSection = () => {
       <StyledDiv
         maxWidth="100%"
         paddingTop="142px"
-        className="align-start-flexed"
+        display="flex"
+        alignItems="flex-start"
         flexDirection="row"
+        bg="#FCFCFC"
       >
-        <StyledDiv maxWidth="360px">
+        <StyledDiv maxWidth="360px"bg="#FCFCFC">
           <StyledHeader1 fontSize="46px">
             Companies that have already joined us
           </StyledHeader1>
         </StyledDiv>
         <StyledDiv
           paddingLeft="40px"
-          className="align-start-flexed"
+          display="flex"
+          alignItems="flex-start"
           flexDirection="row"
           flexWrap="wrap"
           maxWidth="auto"
+          bg="#FCFCFC"
         >
           {companies}
         </StyledDiv>
