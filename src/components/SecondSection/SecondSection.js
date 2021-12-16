@@ -9,7 +9,7 @@ export const DescWrapper = styled.div`
   width: ${({ width }) => width};
 `;
 
-export const SectionHeaderWrapper = styled.div`
+export const SectionHeaderWrapper = styled.header`
   display: flex;
   width: 100%;
 `;
