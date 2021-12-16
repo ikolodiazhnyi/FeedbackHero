@@ -15,7 +15,7 @@ export const FlexSection = styled.section`
 export const StyledHeader6 = styled.h6`
   text-transform: ${({ textTransform }) => textTransform || "uppercase"};
   color: ${({ color }) => color || "#03a8b7"};
-  font-size: 1rem;
+  font-size: ${({ fontSize }) => fontSize || "1rem"};
   font-weight: 300;
   line-height: ${({ lineHeight }) => lineHeight || "auto"};
   padding: ${({ paddingTop }) => paddingTop || "0"}
@@ -36,15 +36,26 @@ export const FirstSection = styled.div`
 `;
 
 export const StyledDiv = styled.div`
+  height: ${({ height }) => height || "initial"};
+  display: ${({ display }) => display || "initial"};
+  justify-content: ${({ justifyContent }) => justifyContent || "initial"};
+  align-items: ${({ alignItems }) => alignItems || "initial"};
   padding: ${({ paddingTop }) => paddingTop || "0"}
     ${({ paddingRight }) => paddingRight || "0"}
     ${({ paddingBottom }) => paddingBottom || "0"}
     ${({ paddingLeft }) => paddingLeft || "0"};
-  max-width: ${({ maxWidth }) => maxWidth || "727px"};
+  margin: ${({ marginTop }) => marginTop || "0"}
+    ${({ marginRight }) => marginRight || "0"}
+    ${({ marginBottom }) => marginBottom || "0"}
+    ${({ marginLeft }) => marginLeft || "0"};
+  max-width: ${({ maxWidth }) => maxWidth || "auto"};
   width: ${({ width }) => width || "auto"};
   flex-direction: ${({ flexDirection }) => flexDirection || "auto"};
-  margin-bottom: ${({ marginBottom }) => marginBottom || "0"};
   flex-wrap: ${({ flexWrap }) => flexWrap || "nowrap"};
+  background: ${({ bg }) => bg || "#fff"};
+  border-radius: ${({ borderRadius }) => borderRadius || "0"};
+  text-align: ${({ textAlign }) => textAlign || "initial"};
+  background: ${({ bg }) => bg || "#fff"};
 `;
 
 export const StyledParagraph = styled.p`
@@ -60,7 +71,6 @@ export const StyledParagraph = styled.p`
 export const LinkBtn = styled(Link)`
   color: #ffffff;
   justify-content: center;
-  height: 40px;
   align-items: center;
   white-space: nowrap;
   background: linear-gradient(93.31deg, #006ad8 1.67%, #01acb4 98.59%),
@@ -72,9 +82,9 @@ export const LinkBtn = styled(Link)`
   text-decoration: none;
   padding: 14px 40px;
   display: inline-flex;
-  margin-top: 54px;
+  margin-top: ${({ marginTop }) => marginTop || "54px"};
   font-size: 14px;
-  height: 50px;
+  height: ${({ height }) => height || "50px"};
   font-weight: 300;
   width: ${({ width }) => width || "auto"};
 `;
