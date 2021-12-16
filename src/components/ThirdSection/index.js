@@ -21,10 +21,16 @@ const ThirdSection = () => {
     >
       <StyledDiv
         maxWidth="auto"
-        className="space-between-flexed"
+        display="flex"
+        justifyContent="space-between"
+        bg="#FCFCFC"
         marginBottom="150px"
       >
-        <StyledDiv width="360px" className="centered-flexed-column">
+        <StyledDiv
+          width="360px"
+          className="centered-flexed-column"
+          bg="#FCFCFC"
+        >
           <StyledHeader6 lineHeight="140%">EASY TO USE</StyledHeader6>
           <StyledHeader1 fontSize="46px">How it works?</StyledHeader1>
           <StyledParagraph fontSize="16px">
@@ -41,10 +47,16 @@ const ThirdSection = () => {
       </StyledDiv>
       <StyledDiv
         maxWidth="auto"
-        className="space-between-flexed"
+        display="flex"
+        justifyContent="space-between"
         flexDirection="row-reverse"
+        bg="#FCFCFC"
       >
-        <StyledDiv width="360px" className="centered-flexed-column">
+        <StyledDiv
+          width="360px"
+          className="centered-flexed-column"
+          bg="#FCFCFC"
+        >
           <StyledHeader6 lineHeight="140%">WHO'LL BENEFIT?</StyledHeader6>
           <StyledHeader1 fontSize="46px">Fits to any business</StyledHeader1>
           <StyledParagraph fontSize="16px">
