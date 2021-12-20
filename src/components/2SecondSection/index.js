@@ -57,7 +57,7 @@ const SecondSection = () => {
   ];
   const advantages = advantagesValues.map(({ h1, p, img }) => {
     return (
-      <ShadowBorderDiv>
+      <ShadowBorderDiv pMarginBottom="50px">
         <ImgAdvantageWrapper>
           <ImgAdvantage src={img} alt="icon" />
         </ImgAdvantageWrapper>
