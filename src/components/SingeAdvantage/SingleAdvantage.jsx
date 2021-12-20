@@ -3,13 +3,13 @@ import {
   StyledHeader1,
   StyledHeader6,
   StyledParagraph,
-} from "../FirstSection/FirstSectionElement";
+} from "../1FirstSection/FirstSectionStyled";
 import {
   ImgAdvantage,
   ImgAdvantageWrapper,
   ShadowBorderDiv,
-} from "../SecondSection/SecondSection";
-import { AdvantageDescWrapper } from "../styles/GlobalStyledComponents";
+} from "../2SecondSection/SecondSectionStyled";
+import { AdvantageDescWrapper } from "../../assets/styles/GlobalStyledComponents";
 
 const SingleAdvantage = ({
   styledHeader1Content,

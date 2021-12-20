@@ -1,23 +1,38 @@
 import Navbar from "../components/NavBar";
 import { BrowserRouter as Router } from "react-router-dom";
-import FirstSection from "../components/FirstSection";
-import SecondSection from "../components/SecondSection";
-import ThirdSection from "../components/ThirdSection";
-import FourthSection from "../components/FourthSection";
-import FifthSection from "../components/FifthSection";
-import SixthSection from "../components/SixthSection";
+import FirstSection from "../components/1FirstSection";
+import SecondSection from "../components/2SecondSection";
+import ThirdSection from "../components/3ThirdSection";
+import FourthSection from "../components/4FourthSection";
+import FifthSection from "../components/5FifthSection";
+import SixthSection from "../components/6SixthSection";
+import SeventhSection from "../components/7SeventhSection";
+import EighthSection from "../components/8EighthSection";
+import NinthSection from "../components/9NinthSection";
+import TenthSection from "../components/10TenthSection";
+import SideBar from "../components/SideBar";
+import { useState } from "react";
 
 function App() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const toggle = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
   return (
     <div>
       <Router>
-        <Navbar />
+        <SideBar isSidebarOpen={isSidebarOpen} toggle={toggle} />
+        <Navbar toggle={setIsSidebarOpen} />
         <FirstSection />
-        <SecondSection />
+        {/* <SecondSection />
         <ThirdSection />
         <FourthSection />
         <FifthSection />
         <SixthSection />
+        <SeventhSection />
+        <EighthSection />
+        <NinthSection />
+        <TenthSection /> */}
       </Router>
     </div>
   );

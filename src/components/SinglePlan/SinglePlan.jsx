@@ -5,7 +5,7 @@ import {
   StyledHeader1,
   StyledHeader6,
   StyledParagraph,
-} from "../FirstSection/FirstSectionElement";
+} from "../1FirstSection/FirstSectionStyled";
 import { PlanWrapper } from "./SinglePlanStyled";
 import UnorderedList from "./UnorderedListOfPlan/UnorderedList";
 

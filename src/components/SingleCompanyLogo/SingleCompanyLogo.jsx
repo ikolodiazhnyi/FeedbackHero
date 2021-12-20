@@ -1,5 +1,5 @@
 import React from "react";
-import { ShadowBorderDiv } from "../SecondSection/SecondSection";
+import { ShadowBorderDiv } from "../2SecondSection/SecondSectionStyled";
 
 const SingleCompanyLogo = ({ ShadowBorderDivProps, companyLogo }) => {
   return (
