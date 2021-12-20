@@ -2,7 +2,7 @@ import React from "react";
 import {
   StyledDiv,
   StyledParagraph,
-} from "../../FirstSection/FirstSectionElement";
+} from "../../1FirstSection/FirstSectionStyled";
 import { StyledLi, StyledUl } from "./UnorderedListStyled";
 import tick from "../../../images/SixthSection/tick.svg"
 
