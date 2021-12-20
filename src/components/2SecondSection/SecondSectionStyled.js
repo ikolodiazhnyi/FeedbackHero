@@ -22,7 +22,7 @@ export const SectionHeaderWrapper = styled.header`
   display: flex;
   width: ${({ width }) => width || "100%"};
   @media screen and (max-width: ${variables.breakpointPhone}) {
-    flex-direction: ${({flexDirection}) => flexDirection || "column"}
+    flex-direction: ${({ flexDirection }) => flexDirection || "column"};
   }
 `;
 
@@ -76,7 +76,7 @@ export const StyledImg = styled.img`
     ${({ marginRight }) => marginRight || "0"}
     ${({ marginBottom }) => marginBottom || "0"}
     ${({ marginLeft }) => marginLeft || "0"};
-  max-width: ${({ maxWidth }) => maxWidth || "initial"};
+  max-width: ${({ maxWidth }) => maxWidth || "none"};
 
   @media screen and (max-width: ${variables.breakpointPhoneSmall}) {
     height: ${({ spHeight }) => spHeight || "auto"};

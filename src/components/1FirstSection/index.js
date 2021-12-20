@@ -17,6 +17,7 @@ const FirstSection = () => {
       paddingTop="100px"
       paddingRight="60px"
       dPaddingTop="50px"
+      pPaddingTop="50px"
       pFlexDirection="column"
     >
       <StyledDiv width="571px" marginRight="65px">
