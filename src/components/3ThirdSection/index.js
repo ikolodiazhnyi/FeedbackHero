@@ -9,6 +9,7 @@ import {
 } from "../1FirstSection/FirstSectionStyled";
 import unsplash1 from "../../images/ThirdSection/unsplash1.svg";
 import unsplash2 from "../../images/ThirdSection/unsplash2.svg";
+import { StyledImg } from "../2SecondSection/SecondSectionStyled";
 
 const ThirdSection = () => {
   return (
@@ -18,6 +19,7 @@ const ThirdSection = () => {
       paddingRight="200px"
       paddingBottom="204px"
       flexDirection="column"
+      pFlexDirection="column"
       bg="#FCFCFC"
     >
       <StyledDiv
@@ -26,6 +28,8 @@ const ThirdSection = () => {
         justifyContent="space-between"
         bg="#FCFCFC"
         marginBottom="150px"
+        pFlexDirection="column"
+        pJustifyContent="space-evenly"
       >
         <StyledDiv
           width="360px"
@@ -35,7 +39,9 @@ const ThirdSection = () => {
           bg="#FCFCFC"
         >
           <StyledHeader6 lineHeight="140%">EASY TO USE</StyledHeader6>
-          <StyledHeader1 marginTop="11px" fontSize="46px">How it works?</StyledHeader1>
+          <StyledHeader1 marginTop="11px" fontSize="46px">
+            How it works?
+          </StyledHeader1>
           <StyledParagraph fontSize="16px">
             We generate a QR code and a short link. Then you offer it to
             visitors (leave stickers on the table, print on table awnings, send
@@ -46,7 +52,7 @@ const ThirdSection = () => {
             the received comments and to do mailing.
           </StyledParagraph>
         </StyledDiv>
-        <img src={unsplash1} alt="" />
+        <StyledImg src={unsplash1} alt="" />
       </StyledDiv>
       <StyledDiv
         maxWidth="auto"
@@ -54,6 +60,8 @@ const ThirdSection = () => {
         justifyContent="space-between"
         flexDirection="row-reverse"
         bg="#FCFCFC"
+        pFlexDirection="column"
+        pJustifyContent="space-evenly"
       >
         <StyledDiv
           width="360px"
