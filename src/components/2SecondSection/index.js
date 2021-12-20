@@ -55,7 +55,7 @@ const SecondSection = () => {
       img: Carbon,
     },
   ];
-  const advantages = advantagesValues.map(({ h1, p, img}) => {
+  const advantages = advantagesValues.map(({ h1, p, img }) => {
     return (
       <ShadowBorderDiv>
         <ImgAdvantageWrapper>
@@ -80,10 +80,12 @@ const SecondSection = () => {
       paddingRight="200px"
       paddingTop="140px"
       paddingLeft="200px"
+      pFlexDirection="column"
+      pPaddingTop="50px"
     >
       <SectionHeaderWrapper>
         <SectionName>FEATURES</SectionName>
-        <DescWrapper maxWidth="570px" marginLeft="348px">
+        <DescWrapper pMarginLeft="0" maxWidth="570px" marginLeft="348px">
           <StyledHeader1 fontSize="46px">Why FeedbackHero?</StyledHeader1>
           <StyledParagraph fontSize="1rem">
             Return customers with NPS service, feedback and FeedbackHero loyalty

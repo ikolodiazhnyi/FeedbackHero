@@ -12,11 +12,18 @@ export const DescWrapper = styled.div`
   max-width: ${({ maxWidth }) => maxWidth || "initial"};
   margin-left: ${({ marginLeft }) => marginLeft || "0"};
   width: ${({ width }) => width};
+
+  @media screen and (max-width: ${variables.breakpointPhone}) {
+    margin-left: ${({ pMarginLeft }) => pMarginLeft || "initial"};
+  }
 `;
 
 export const SectionHeaderWrapper = styled.header`
   display: flex;
   width: ${({ width }) => width || "100%"};
+  @media screen and (max-width: ${variables.breakpointPhone}) {
+    flex-direction: ${({flexDirection}) => flexDirection || "column"}
+  }
 `;
 
 export const SectionName = styled.h6`
@@ -31,6 +38,11 @@ export const AdvantagesWrapper = styled.div`
   justify-content: ${({ justifeContent }) => justifeContent || "space-between"};
   flex-wrap: wrap;
   padding: 49px 0 0;
+
+  @media screen and (max-width: ${variables.breakpointPhone}) {
+    justify-content: ${({ pJustifeContent }) =>
+      pJustifeContent || "space-evenly"};
+  }
 `;
 export const ImgAdvantage = styled.img`
   display: block;
@@ -64,7 +76,7 @@ export const StyledImg = styled.img`
     ${({ marginRight }) => marginRight || "0"}
     ${({ marginBottom }) => marginBottom || "0"}
     ${({ marginLeft }) => marginLeft || "0"};
-    max-width: ${({ maxWidth }) => maxWidth || "initial"};
+  max-width: ${({ maxWidth }) => maxWidth || "initial"};
 
   @media screen and (max-width: ${variables.breakpointPhoneSmall}) {
     height: ${({ spHeight }) => spHeight || "auto"};
@@ -82,4 +94,7 @@ export const ShadowBorderDiv = styled.div`
   flex-direction: column;
   margin-bottom: ${({ marginBottom }) => marginBottom || "60px"};
   margin-right: ${({ marginRight }) => marginRight || 0};
+
+  @media screen and (max-width: ${variables.breakpointPhone}) {
+  }
 `;
