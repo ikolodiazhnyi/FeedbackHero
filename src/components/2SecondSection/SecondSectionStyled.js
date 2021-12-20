@@ -15,6 +15,7 @@ export const DescWrapper = styled.div`
 
   @media screen and (max-width: ${variables.breakpointPhone}) {
     margin-left: ${({ pMarginLeft }) => pMarginLeft || "initial"};
+    width: ${({ pWidth }) => pWidth || "auto"};
   }
 `;
 
@@ -96,5 +97,7 @@ export const ShadowBorderDiv = styled.div`
   margin-right: ${({ marginRight }) => marginRight || 0};
 
   @media screen and (max-width: ${variables.breakpointPhone}) {
+    margin-right: ${({ pMarginRight }) => pMarginRight || 0};
+    margin-bottom: ${({ pMarginBottom }) => pMarginBottom || "0"};
   }
 `;

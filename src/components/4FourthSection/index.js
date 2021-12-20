@@ -45,7 +45,9 @@ const FourthSection = () => {
       imgAdvantageProp={advtg.img}
       advantageProp={{
         marginRight: "60px",
+        pMarginRight: "0",
         marginBottom: "150px",
+        pMarginBottom: "50px",
         height: "370px",
       }}
       imgAdvantageWrapperProps={{

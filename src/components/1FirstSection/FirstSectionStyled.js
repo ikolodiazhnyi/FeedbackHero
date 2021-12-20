@@ -18,7 +18,7 @@ export const FlexSection = styled.section`
   }
 
   @media screen and (max-width: ${variables.breakpointPhone}) {
-    flex-direction: ${({ pFlexDirection }) => pFlexDirection || "row"};
+    flex-direction: ${({ pFlexDirection }) => pFlexDirection || "column"};
     padding: ${({ pPaddingTop }) => pPaddingTop || "0"} 20px
       ${({ pPaddingBottom }) => pPaddingBottom || "0"} 20px;
   }
@@ -43,6 +43,9 @@ export const StyledHeader1 = styled.h1`
     ${({ marginRight }) => marginRight || "0"}
     ${({ marginBottom }) => marginBottom || "0"}
     ${({ marginLeft }) => marginLeft || "0"};
+  @media screen and (max-width: ${variables.breakpointPhone}) {
+    height: ${({ pHeight }) => pHeight || "auto"};
+  }
 `;
 
 export const FirstSection = styled.div`
