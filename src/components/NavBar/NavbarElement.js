@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { variables } from "../../assets/styles/GlobalStyledComponents";
 
 export const Nav = styled.nav`
   background: #ffffff;
@@ -9,9 +10,6 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   border-bottom: 1px solid rgba(32, 39, 49, 0.2);
-
-  @media screen and (max-width: 960px) {
-  }
 `;
 
 export const NavContainer = styled.div`
@@ -22,16 +20,21 @@ export const NavContainer = styled.div`
   padding: 0 60px 0 200px;
   z-index: 1;
   max-width: 1600px;
+
+  @media screen and (max-width: ${variables.breakpointDesktop}) {
+    padding: 0 20px 0 20px;
+    background: #fff;
+  }
 `;
 export const NavLogo = styled(Link)`
   display: flex;
   align-items: center;
 `;
- 
+
 export const NavDiv = styled.div`
   display: flex;
   padding-top: 10px;
-`
+`;
 
 export const NavMenu = styled.ul`
   display: flex;
@@ -39,9 +42,26 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   padding-left: calc(100% - 840px);
+  @media screen and (max-width: ${variables.breakpointPhone}) {
+    display: none;
+  }
 `;
 
-export const NavItem = styled.li`
+export const MobileIcon = styled.div`
+  display: none;
+  @media screen and (max-width: ${variables.breakpointPhone}) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -25%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #000;
+  }
+  @media screen and (max-width: ${variables.breakpointPhoneSmall}) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const NavLink = styled(Link)`
@@ -52,11 +72,17 @@ export const NavLink = styled(Link)`
   padding: 0 2rem;
   height: 100%;
   cursor: pointer;
+  @media screen and (max-width: ${variables.breakpointDesktop}) {
+    padding: 0 1rem;
+  }
 `;
 
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
+  @media screen and (max-width: ${variables.breakpointPhone}) {
+    display: none;
+  }
 `;
 
 export const NavBtnLink = styled(Link)`
@@ -67,7 +93,7 @@ export const NavBtnLink = styled(Link)`
   align-items: center;
   white-space: nowrap;
   background: linear-gradient(93.31deg, #006ad8 1.67%, #01acb4 98.59%),
-  rgba(196, 196, 196, 0.05);
+    rgba(196, 196, 196, 0.05);
   border-radius: 5px;
   backdrop-filter: blur(37px);
   font-size: 1rem;
@@ -76,4 +102,8 @@ export const NavBtnLink = styled(Link)`
   margin-left: 80px;
   padding: 14px 40px;
   min-width: 185px;
+
+  @media screen and (max-width: ${variables.breakpointDesktop}) {
+    margin-left: ${({ marginLeft }) => marginLeft || "40px"};
+  }
 `;

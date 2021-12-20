@@ -1,35 +1,41 @@
 import React from "react";
-import Logo from "../../images/NavBar/FeedbackHeroLogo3.svg";
+import Logo from "../../images/FeedbackHeroLogo3.svg";
+import { FaBars } from "react-icons/fa";
 import {
   Nav,
   NavBtn,
   NavBtnLink,
   NavContainer,
   NavDiv,
-  NavItem,
   NavLink,
   NavLogo,
   NavMenu,
+  MobileIcon,
 } from "./NavbarElement";
+import { StyledImg } from "../2SecondSection/SecondSectionStyled";
 
-const Navbar = () => {
+
+const Navbar = ({toggle}) => {
   return (
     <Nav>
       <NavContainer>
         <NavLogo to="">
-          <img src={Logo} alt="" />
+          <StyledImg spHeight="70%" spWidth="70%" src={Logo} alt="" />
         </NavLogo>
+        <MobileIcon onClick={toggle}>
+          <FaBars />
+        </MobileIcon>
         <NavDiv>
           <NavMenu>
-            <NavItem>
+            <li>
               <NavLink to="features">Features</NavLink>
-            </NavItem>
-            <NavItem>
+            </li>
+            <li>
               <NavLink to="pricing">Pricing</NavLink>
-            </NavItem>
-            <NavItem>
+            </li>
+            <li>
               <NavLink to="blog">Blog</NavLink>
-            </NavItem>
+            </li>
           </NavMenu>
           <NavBtn>
             <NavBtnLink to="">Register</NavBtnLink>
