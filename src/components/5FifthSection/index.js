@@ -58,9 +58,24 @@ const FifthSection = () => {
         maxWidth="auto"
         paddingTop="62px"
         bg="#FCFCFC"
+        pFlexDirection="column"
+        pMarginTop="20px"
       >
-        <StyledImg paddingRight="60px" paddingTop="0" src={man} alt="" />
-        <StyledImg paddingRight="60px" paddingTop="0" src={vector} alt="" />
+        <StyledImg
+          pMarginBottom="20px"
+          pPaddingRight="0"
+          paddingRight="60px"
+          paddingTop="0"
+          src={man}
+          alt=""
+        />
+        <StyledImg
+          paddingRight="60px"
+          pMarginBottom="20px"
+          paddingTop="0"
+          src={vector}
+          alt=""
+        />
         <StyledDiv width="680px" bg="#FCFCFC">
           <StyledHeader1 fontSize="26px" paddingTop="0" fontWeight="100">
             Some text with rewiev from client Some text with rewiev from client.
@@ -71,16 +86,23 @@ const FifthSection = () => {
           <StyledHeader6
             color="#000"
             paddingTop="81px"
+            pPaddingTop="40px"
             fontSize="16px"
             textTransform="normal"
           >
             Alberto Coltraliano, CEO
           </StyledHeader6>
-          <StyledParagraph paddingBottom="67px" paddingTop="0" fontSize="16px">
+          <StyledParagraph
+            pPaddingBottom="20px"
+            paddingBottom="67px"
+            paddingTop="0"
+            fontSize="16px"
+          >
             Hilton Corporation Ltd
           </StyledParagraph>
           <StyledDiv bg="#FCFCFC">
             <StyledImg
+              pPaddingRight="20px"
               paddingRight="30px"
               paddingTop="0"
               src={buttonForward}
@@ -97,8 +119,9 @@ const FifthSection = () => {
         alignItems="flex-start"
         flexDirection="row"
         bg="#FCFCFC"
+        pFlexDirection="column"
       >
-        <StyledDiv maxWidth="360px"bg="#FCFCFC">
+        <StyledDiv maxWidth="360px" bg="#FCFCFC" pMarginTop="40px">
           <StyledHeader1 fontSize="46px">
             Companies that have already joined us
           </StyledHeader1>
@@ -111,6 +134,9 @@ const FifthSection = () => {
           flexWrap="wrap"
           maxWidth="auto"
           bg="#FCFCFC"
+          pFlexDirection="row"
+          pJustifyContent="space-evenly"
+          pPaddingTop="40px"
         >
           {companies}
         </StyledDiv>

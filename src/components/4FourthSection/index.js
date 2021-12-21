@@ -60,7 +60,7 @@ const FourthSection = () => {
         boxShadow: "0px 15px 30px rgba(0, 0, 0, 0.05)",
         borderRadius: "10px",
       }}
-      styledHeader1Props={{ height: "30px", fontSize: "20px" }}
+      styledHeader1Props={{ height: "60px", fontSize: "20px" }}
       styledHeader6Props={{
         height: "30px",
         fontSize: "1rem",
@@ -80,7 +80,7 @@ const FourthSection = () => {
             <br />
             Connect BerbackHero today.
           </StyledHeader1>
-          <StyledParagraph fontSize="1rem">
+          <StyledParagraph fontSize="1rem" pPaddingTop="20px">
             The FeedbackHero system works for the reputation of your brand.
             <br />
             You’ll see your business the way your customers see it.

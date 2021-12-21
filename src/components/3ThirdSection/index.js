@@ -21,6 +21,8 @@ const ThirdSection = () => {
       flexDirection="column"
       pFlexDirection="column"
       bg="#FCFCFC"
+      pPaddingTop="50px"
+      pPaddingBottom="50px"
     >
       <StyledDiv
         maxWidth="auto"
@@ -52,7 +54,13 @@ const ThirdSection = () => {
             the received comments and to do mailing.
           </StyledParagraph>
         </StyledDiv>
-        <StyledImg src={unsplash1} alt="" />
+        <StyledImg
+          pMarginTop="40px"
+          pMarginBottom="40px"
+          maxWidth="100%"
+          src={unsplash1}
+          alt=""
+        />
       </StyledDiv>
       <StyledDiv
         maxWidth="auto"
@@ -83,7 +91,13 @@ const ThirdSection = () => {
             START USING
           </LinkBtn>
         </StyledDiv>
-        <img src={unsplash2} alt="" />
+        <StyledImg
+          pMarginBottom="40px"
+          pMarginTop="40px"
+          maxWidth="100%"
+          src={unsplash2}
+          alt=""
+        />
       </StyledDiv>
     </FlexSection>
   );
