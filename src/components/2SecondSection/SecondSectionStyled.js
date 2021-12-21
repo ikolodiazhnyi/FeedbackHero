@@ -83,6 +83,19 @@ export const StyledImg = styled.img`
     height: ${({ spHeight }) => spHeight || "auto"};
     width: ${({ spWidth }) => spWidth || "auto"};
   }
+
+  @media screen and (max-width: ${variables.breakpointPhone}) {
+    margin: ${({ pMarginTop }) => pMarginTop || "0"}
+      ${({ pMarginRight }) => pMarginRight || "0"}
+      ${({ pMarginBottom }) => pMarginBottom || "0"}
+      ${({ pMarginLeft }) => pMarginLeft || "0"};
+    padding: ${({ pPaddingTop }) => pPaddingTop || "0"}
+      ${({ pPaddingRight }) => pPaddingRight || "0"}
+      ${({ pPaddingBottom }) => pPaddingBottom || "0"}
+      ${({ pPaddingLeft }) => pPaddingLeft || "0"};
+    height: ${({ pHeight }) => pHeight || "auto"};
+    width: ${({ pWidth }) => pWidth || "auto"};
+  }
 `;
 
 export const ShadowBorderDiv = styled.div`
@@ -98,6 +111,6 @@ export const ShadowBorderDiv = styled.div`
 
   @media screen and (max-width: ${variables.breakpointPhone}) {
     margin-right: ${({ pMarginRight }) => pMarginRight || 0};
-    margin-bottom: ${({ pMarginBottom }) => pMarginBottom || "0"};
+    margin-bottom: ${({ pMarginBottom }) => pMarginBottom || "20px"};
   }
 `;
